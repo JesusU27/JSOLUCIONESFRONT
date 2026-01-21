@@ -1,5 +1,5 @@
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_URL = import.meta.env.API_BASE_URL || 'http://localhost:8000/api';
 
 //concat /auth/login/
 const LOGIN_URL = `${API_URL}/auth/login/`;
@@ -8,7 +8,7 @@ export const loginService = async (email, password) => {
   try {
     console.log('Intentando login con:', email);
     
-    const response = await fetch(API_URL, {
+    const response = await fetch(LOGIN_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
