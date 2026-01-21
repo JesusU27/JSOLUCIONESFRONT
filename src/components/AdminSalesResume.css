@@ -1,0 +1,257 @@
+.admin-resume-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.admin-resume-container h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 16px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #f5c6cb;
+}
+
+.resume-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: white;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.header-left h3 {
+  color: #333;
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.date {
+  color: #999;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-badge {
+  border: 3px solid;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.resume-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 25px;
+}
+
+.stat-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-label {
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  color: #667eea;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.observations-section {
+  padding: 20px 25px;
+  background-color: rgba(102, 126, 234, 0.05);
+  border-left: 4px solid #667eea;
+  margin: 0 25px;
+}
+
+.observations-section h4 {
+  color: #667eea;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.observations-section p {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.details-section {
+  padding: 20px 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.details-toggle {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+.details-toggle:hover {
+  background-color: #f9f9f9;
+  border-color: #667eea;
+}
+
+.details-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-item {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #667eea;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.item-header h5 {
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-price {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.item-description {
+  color: #999;
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.item-details {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.detail {
+  color: #666;
+}
+
+.detail strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.resume-footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.action-btn {
+  padding: 10px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.action-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .resume-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .resume-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .item-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
