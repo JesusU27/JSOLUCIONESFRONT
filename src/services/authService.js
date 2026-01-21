@@ -1,4 +1,8 @@
-const API_URL = 'http://127.0.0.1:8000/api/auth/login/';
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+
+//concat /auth/login/
+const LOGIN_URL = `${API_URL}/auth/login/`;
 
 export const loginService = async (email, password) => {
   try {
